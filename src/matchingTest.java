@@ -25,4 +25,24 @@ public class matchingTest {
         assertEquals(false, ParenthesesMatcher.isMatched(""));
     }
 
+    @Test
+    public void test6() {
+        assertEquals(true, ParenthesesMatcher.isMatched("5+6*(3-2.1)+[7-{3/2}]"));
+    }
+
+    @Test
+    public void test7() {
+        assertEquals(false, ParenthesesMatcher.isMatched("ab(cd}"));
+    }
+
+    @Test
+    public void test8() {
+        assertEquals(false, ParenthesesMatcher.isMatched("ab+(cd*{)"));
+    }
+
+    @Test
+    public void test9() {
+        assertEquals(true, ParenthesesMatcher.isMatched("alpha[]({!(+)[]})"));
+    }
+
 }

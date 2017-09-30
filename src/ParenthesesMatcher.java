@@ -23,8 +23,9 @@ public class ParenthesesMatcher {
         String openingString = "([{";
         String closingString = ")]}";
 
+
+        // no way to complete the brackets
         if(string.length() <= 1){
-            System.out.println("length less than 1");
             return false;
         }
 
